@@ -4,7 +4,12 @@
 	<meta charset="UTF-8">
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/accordion.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 
@@ -25,8 +30,1105 @@
     <!-- Конец -->
 
     <div class="main">
-        В данном блоке размещается верстка
-    </div>
+        <section class="header">
+            <div class="container header__container">
+                <div class="header__menu">
+                    <a href="#" class="header-logo">
+                        <picture>
+                        <img src="img/innomavcLogo.png" class="header-logo-img" alt="logo">
+                        </picture>
+                    </a>
+                    <nav class="nav header__nav">
+                        <ul class="nav__list list-resert">
+                            <li class="nav__list-item">
+                                Кто&nbsp;мы?
+                            </li>
+                            <li class="nav__list-item">
+                                Услуги
+                            </li>
+                            <li class="nav__list-item">
+                                Акселератор
+                            </li>
+                            <li class="nav__list-item">
+                                Новости
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__btn btn-resert btn-green" onclick="openModal('#typeModal')">
+                        Войти
+                    </button>
+                    <div id="typeModal" class="modalWrapper">
+                        <div class="backBlack">
+                        </div>
+                        <div class="modalContent modal-form">
+                            <button class="btn-resert butExit">
+                            </button>
+                            <form action="#" method="get" class="reg__form">
+                                <p class="reg-title">
+                                    Войти
+                                </p>
+                                <input type="text" class="reg-input password" name="password" placeholder="Пароль">
+                                <input type="email" class="reg-input mail" name="email" placeholder="E-mail">
+                                <button class="btn-resert btn-green reg-form-btn">
+                                    Войти
+                                </button>
+                                <a href="#" class="reg-link">
+                                    Зарегистрироваться
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                    <button class="btn-resert burger">
+                        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="burger__line" d="M16 5H4" stroke="#07AF91" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="burger__line" d="M19 1H1" stroke="#07AF91" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="burger__line" d="M19 9H1" stroke="#07AF91" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="burger__line" d="M16 13H4" stroke="#07AF91" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header__descr">
+                    <p class="header__title">
+                        Запустите 
+                    </p>
+                    <h1 class="main-title">
+                        технологический IT-бизнес 
+                    </h1>
+                    <p class="header__title">
+                        на международных рынках
+                    </p>
+                    <p class="header__proposal">
+                        Открыт набор заявок на акселератор
+                    </p>
+                    <button class="proposal-btn btn-resert btn-blue">
+                        Подать заявку
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container services__container">
+                <h2 class="section-title services__title">
+                    Наши услуги
+                </h2>
+                <div class="services__researches">
+                    <h3 class="services__researches-title">
+                        Аналитические исследования
+                    </h3>
+                    <p class="services__researches-descr">
+                        Одним из&nbsp;наших ключевых направлений является анализ технологических трендов на&nbsp;международных рынках.
+                        Мы&nbsp;проводим анализ на&nbsp;основе публичных исследований McKinsey, BCG, PWC, Deloitte, Accenture, BCG, EY, Crunchbase, Dealroom, F6S, PitchBook а&nbsp;также агрегируем и&nbsp;анализируем данные из&nbsp;открытых международных источников патенты, медиа, научные публикации
+                    </p>
+                    <button class="btn-resert btn-green services-btn">
+                        Узнать подробнее
+                    </button>
+                </div>
+                <div class="services__accelerator">
+                    <h3 class="services__researches-title">
+                        Онлайн акселератор для&nbsp;IT бизнеса
+                    </h3>
+                    <p class="services__researches-descr">
+                        Онлайн программа аскелерации&nbsp;IT бизнеса позволит вашей команде открыть новые горизонты и&nbsp;возможности для бизнеса на&nbsp;глобальных рынках. В&nbsp;результате программы вы&nbsp;получите возможность презентовать свой проект для международных инвесторов и&nbsp;локальных партнеров
+                    </p>
+                    <button class="btn-resert btn-green services-btn">
+                        Узнать подробнее
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="forwhom">
+            <div class="container forwhom__container">
+                <h2 class="section-title forwhom__title">
+                    Для кого мы?
+                </h2>
+                <ul class="forwhom__list list-resert">
+                    <li class="forwhom__list-item">
+                        <p class="forwhom-number">
+                            01
+                        </p>
+                        <h3 class="forwhom__list-title">
+                            IT&nbsp;проекты на&nbsp;стадии идеи
+                        </h3>
+                        <p class="forwhom__list-descr">
+                            Для стартапов, которые планируют привлечь международные инвестиции, протестировать спрос и&nbsp;запустить продукт
+                        </p>
+                    </li>
+                    <li class="forwhom__list-item">
+                        <p class="forwhom-number">
+                            02
+                        </p>
+                        <h3 class="forwhom__list-title">
+                            Инновационный бизнес
+                        </h3>
+                        <p class="forwhom__list-descr">
+                            Для уже работающего технологического бизнес, позволим найти новые международне рынки сбыта, масштабировать бизнес
+                        </p>
+                    </li>
+                    <li class="forwhom__list-item">
+                        <p class="forwhom-number">
+                            03
+                        </p>
+                        <h3 class="forwhom__list-title">
+                            Корпорации
+                        </h3>
+                        <p class="forwhom__list-descr">
+                            Для уже работающего технологического бизнес, позволим найти новые международне рынки сбыта, масштабировать бизнес
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="consultation">
+            <div class="container consultation__container">
+                <h2 class="consultation__title">
+                    Научитесь исследовать иностранные рынки и&nbsp;откройте новые возможности для своего бизнеса
+                </h2>
+                <p class="consultation__descr">
+                    Наша команда поможет вам изучить рынки Ближнего Востока, Азии, Латинской Америки и&nbsp;Африки
+                </p>
+                <button class="btn-resert btn-blue consultation__btn">
+                    Получить консультацию
+                </button>
+            </div>
+        </section>
+        <section class="markets">
+            <div class="container markets__container">
+                <h2 class="section-title markets__title">
+                    С&nbsp;какими рынками мы&nbsp;работаем?
+                </h2>
+                <ul class="markets__countr list-resert tabs-nav">
+                    <li class="tabs-nav__btn tabs-nav__btn--active" data-path="one">
+                           Ближний восток
+                    </li>
+                    <li class="tabs-nav__btn" data-path="two">
+                        Азия
+                    </li>
+                    <li class="tabs-nav__btn" data-path="three">
+                        Латинская Америка
+                    </li>
+                    <li class="tabs-nav__btn" data-path="four">
+                        Африка
+                    </li>
+                </ul>
+                <div class="markets__descr tabs-content">
+                    <div class="tabs-item tabs-item--active" data-target="one">
+                        <div class="markets__block-left">
+                            <p class="market-text">
+                                Чем интересен
+                            </p>
+                            <h3 class="market-name">
+                                Рынок MENA: 
+                            </h3>
+                            <p class="market-descr">
+                                ОАЭ, Саудовская Аравия, Израиль, Оман, Бахрейн, Катар, Тунис, Йемен, Египет, Алжир
+                            </p>
+                            <button class="btn-resert btn-blue market-btn">
+                                Выйти на&nbsp;рынок
+                            </button>
+                            <div class="market-manager">
+                                <p class="manager-name">
+                                    Фатима 
+                                </p>
+                                <p class="manager-descr">
+                                    Менеджер по MENA
+                                </p>
+                            </div>
+                        </div>
+                        <div class="markets__block-right">
+                            <ul class="markets__block-list list-resert">
+                                <li class="markets__block-item">
+                                    <div class="market-card-score">
+                                        <p class="market-score">
+                                            >5,5
+                                        </p>
+                                        <div class="score-rpm">
+                                            млрд
+                                        </div>
+                                    </div>
+                                    <p class="score-descr">
+                                        Инвестиции pre-seed, seed
+                                    </p>
+                                </li>
+                                <li class="markets__block-item">
+                                    <p class="market-score-title">
+                                        >300
+                                    </p>
+                                    <p class="score-descr">
+                                        Акселераторов, инкубаторов
+                                    </p>
+                                </li>
+                                <li class="markets__block-item">
+                                    <p class="market-score-title">
+                                        73
+                                    </p>
+                                     <p class="score-descr">
+                                        Венчурных фонда
+                                    </p>
+                                </li>
+                                <li class="markets__block-item">
+                                    <svg width="48" height="42" viewBox="0 0 48 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.041 32.7911C23.4315 33.1816 24.0647 33.1816 24.4552 32.7911L30.8192 26.4271C31.2097 26.0366 31.2097 25.4034 30.8192 25.0129C30.4286 24.6224 29.7955 24.6224 29.405 25.0129L23.7481 30.6697L18.0913 25.0129C17.7007 24.6224 17.0676 24.6224 16.677 25.0129C16.2865 25.4034 16.2865 26.0366 16.677 26.4271L23.041 32.7911ZM22.7481 3.81472e-08L22.7481 32.084L24.7481 32.084L24.7481 -3.81476e-08L22.7481 3.81472e-08Z" fill="white"/>
+                                        <line x1="46.4962" y1="41" x2="0.999992" y2="41" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    <a href="#" class="score-link">
+                                        Скачать отчет по рынку MENA
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="accel">
+            <div class="container accel__container">
+                <h2 class="section-title accel__title">
+                    Об&nbsp;акселераторе&nbsp;IT бизнеса
+                </h2>
+                <p class="accel__descr">
+                    Программа акселератора расчитана на&nbsp;8&nbsp;недель интенсивного онлайн курса с&nbsp;вебинарами приглашенных экспертов по&nbsp;международным рынкам, разборами ваших идей и&nbsp;проектов
+                </p>
+                <ul class="list-resert accel__profit">
+                    <li class="accel__profit-item ">
+                        <p class="profit-item profit-1">
+                            Месяца обучения
+                        </p>
+                    </li>
+                    <li class="accel__profit-item">
+                        <p class="profit-item profit-2">
+                          Приглашенные эксперты   
+                        </p>
+                    </li>
+                    <li class="accel__profit-item">
+                        <p class="profit-item profit-3">
+                            Персональный менеджер
+                        </p>
+                    </li>
+                </ul>
+                <div class="accel__video-contaitner">
+                    <video autoplay loop muted class="accel__video">
+                        <source src="#" type="">
+                    </video>                    
+                    <div class="accel__video-overlay">
+                        <a href="#" class="accel__video-link">
+                            Об&nbsp;акселерационной программе
+                        </a>   
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <section class="program">
+            <div class="container program__container">
+                <h2 class="section-title program-title">
+                    Программа акселератора
+                </h2>
+                <div class="accordion-container">
+                    <ul class="list-resert accordion program-ac">
+                        <li class="ac ac-item">
+                            <div class="ac-header">
+                                <button type="button" class="btn-resert ac-trigger">
+                                    <span class="ac-module">
+                                        Модуль 1
+                                    </span>
+                                    <span class="ac-module-name">
+                                        Тенденции и&nbsp;тренды современного мира
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="ac-panel">
+                                <p class="ac-content-text">
+                                    Тема&nbsp;1. Куда движутся&nbsp;IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний                            </p>
+                                <p class="ac-content-text">
+                                    Тема&nbsp;2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема                            </p>
+                                <p class="ac-content-text">
+                                    3. Что такое внутренние и&nbsp;внешние инновации? Как искать инновационные идеи?                            </p>
+                                <a href="#" class="ac-content-link">
+                                    9&nbsp;видео роликов, вебинар с&nbsp;приглашенным экспертом
+                                </a>
+                            </div>
+                        </li>
+                        <li class="ac ac-item">
+                            <div class="ac-header">
+                                <button type="button" class="btn-resert ac-trigger">
+                                    <span class="ac-module">
+                                        Модуль 2
+                                    </span>
+                                    <span class="ac-module-name">
+                                        Стартап подход к&nbsp;созданию международного&nbsp;IT продукта
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="ac-panel">
+                               <p class="ac-content-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe quibusdam deserunt delectus blanditiis voluptatem eos quas in corporis possimus, repellendus aspernatur, non similique esse molestiae est minima dolore a!
+                               </p>
+                            </div>
+                        </li>
+                        <li class="ac ac-item">
+                            <div class="ac-header">
+                                <button type="button" class="btn-resert ac-trigger">
+                                    <span class="ac-module">
+                                        Модуль 3
+                                    </span>
+                                    <span class="ac-module-name">
+                                        Бизнес моделирование и&nbsp;поиск Product Market Fit
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="ac-panel">
+                               <p class="ac-content-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe quibusdam deserunt delectus blanditiis voluptatem eos quas in corporis possimus, repellendus aspernatur, non similique esse molestiae est minima dolore a!
+                               </p>
+                            </div>
+                        </li>
+                        <li class="ac ac-item">
+                            <div class="ac-header">
+                                <button type="button" class="btn-resert ac-trigger">
+                                    <span class="ac-module">
+                                        Модуль 4
+                                    </span>
+                                    <span class="ac-module-name">
+                                        Определение рынка, поиск и&nbsp;исследование Целевой аудитории
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="ac-panel">
+                               <p class="ac-content-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe quibusdam deserunt delectus blanditiis voluptatem eos quas in corporis possimus, repellendus aspernatur, non similique esse molestiae est minima dolore a!
+                               </p>
+                            </div>
+                        </li>
+                        <li class="ac ac-item">
+                            <div class="ac-header">
+                                <button type="button" class="btn-resert ac-trigger">
+                                    <span class="ac-module">
+                                        Модуль 5
+                                    </span>
+                                    <span class="ac-module-name">
+                                        Что такое MVP и&nbsp;почему это важно
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="ac-panel">
+                               <p class="ac-content-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe quibusdam deserunt delectus blanditiis voluptatem eos quas in corporis possimus, repellendus aspernatur, non similique esse molestiae est minima dolore a!
+                               </p>
+                            </div>
+                        </li>
+                        <li class="ac ac-item">
+                            <div class="ac-header">
+                                <button type="button" class="btn-resert ac-trigger">
+                                    <span class="ac-module">
+                                        Модуль 6
+                                    </span>
+                                    <span class="ac-module-name">
+                                        Unit экономика и&nbsp;финансовое моделирование
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="ac-panel">
+                               <p class="ac-content-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe quibusdam deserunt delectus blanditiis voluptatem eos quas in corporis possimus, repellendus aspernatur, non similique esse molestiae est minima dolore a!
+                               </p>
+                            </div>
+                        </li>
+                        <li class="ac ac-item">
+                            <div class="ac-header">
+                                <button type="button" class="btn-resert ac-trigger">
+                                    <span class="ac-module">
+                                        Модуль 7
+                                    </span>
+                                    <span class="ac-module-name">
+                                        Что такое дорожная карта продукта?
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="ac-panel">
+                               <p class="ac-content-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe quibusdam deserunt delectus blanditiis voluptatem eos quas in corporis possimus, repellendus aspernatur, non similique esse molestiae est minima dolore a!
+                               </p>
+                            </div>
+                        </li>
+                        <li class="ac ac-item">
+                            <div class="ac-header">
+                                <button type="button" class="btn-resert ac-trigger">
+                                    <span class="ac-module">
+                                        Модуль 8
+                                    </span>
+                                    <span class="ac-module-name">
+                                        Документы дя&nbsp;международных инвесторов
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="ac-panel">
+                               <p class="ac-content-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe quibusdam deserunt delectus blanditiis voluptatem eos quas in corporis possimus, repellendus aspernatur, non similique esse molestiae est minima dolore a!
+                               </p>
+                            </div>
+                        </li>
+                        <li class="ac ac-item">
+                            <div class="ac-header">
+                                <button type="button" class="btn-resert ac-trigger">
+                                    <span class="ac-module">
+                                        Модуль 9
+                                    </span>
+                                    <span class="ac-module-name">
+                                        Открытие юридического лица. Возможности для стартапов
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="ac-panel">
+                               <p class="ac-content-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe quibusdam deserunt delectus blanditiis voluptatem eos quas in corporis possimus, repellendus aspernatur, non similique esse molestiae est minima dolore a!
+                               </p>
+                            </div>
+                        </li>
+                        <li class="ac ac-item">
+                            <div class="ac-header">
+                                <button type="button" class="btn-resert ac-trigger">
+                                    <span class="ac-module">
+                                        Демо день
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="ac-panel">
+                               <p class="ac-content-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe quibusdam deserunt delectus blanditiis voluptatem eos quas in corporis possimus, repellendus aspernatur, non similique esse molestiae est minima dolore a!
+                               </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn-resert btn-blue program-btn">
+                    Получить полную программу
+                </button>
+            </div>
+        </section>
+        <sectoin class="radar">
+            <div class="container radar__container">
+                <div class="radar__proposal">
+                    <h2 class="section-title radar__title">
+                        Попадите на&nbsp;радары инвесторов и&nbsp;партнеров
+                    </h2>
+                    <p class="proposal-descr">
+                        В&nbsp;результате прохождения обучения мы&nbsp;создадим профили вашей компании на&nbsp;всех международных скаутинговых площадках
+                    </p>
+                    <button class="btn-resert btn-green radar-btn">
+                        Записаться в&nbsp;акселератор
+                    </button>
+                </div>
+                <ul class="list-resert radar__cards">
+                    <li class="radar__card-item radar-card1"></li>
+                    <li class="radar__card-item radar-card2"></li>
+                    <li class="radar__card-item radar-card3"></li>
+                    <li class="radar__card-item radar-card4"></li>
+                    <li class="radar__card-item radar-card5"></li>
+                    <li class="radar__card-item radar-card6"></li>
+                </ul>
+            </div>
+        </sectoin>
+        <section class="result">
+            <div class="container result__container">
+                <h2 class="section-title result-title">
+                    Что вы&nbsp;получите в&nbsp;результате?
+                </h2>
+                <div class="result__steps">
+                    <ul class="result__list list-resert">
+                        <li class="result__list-item">
+                            <p class="result-number">
+                                01
+                            </p>
+                            <h3 class="result__list-title">
+                                Документы по&nbsp;продукту
+                            </h3>
+                            <p class="result__list-descr">
+                                Бизнес план, отчет по&nbsp;анализу рынка, маркетинговый план, unit экономика, список гипотез, проект MVP  
+                            </p>
+                        </li>
+                        <li class="result__list-item">
+                            <p class="result-number">
+                                02
+                            </p>
+                            <h3 class="result__list-title">
+                                Обратная связь от&nbsp;рынка
+                            </h3>
+                            <p class="result__list-descr">
+                                Проведение исследования целевой аудитории позволит сформировать Product market fit 
+                            </p>
+                        </li>
+                        <li class="result__list-item">
+                            <p class="result-number">
+                                03
+                            </p>
+                            <h3 class="result__list-title">
+                                Продвижение продукта
+                            </h3>
+                            <p class="result__list-descr">
+                                Продвижение продукта через аналитические системы партнеров                            
+                            </p>
+                        </li>
+                        <li class="result__list-item">
+                            <p class="result-number">
+                                04
+                            </p>
+                            <h3 class="result__list-title">
+                                Подписка на&nbsp;отчеты
+                            </h3>
+                            <p class="result__list-descr">
+                                Подписка на&nbsp;аналитические отчеты по&nbsp;международным рынкам высокотехнологичных сфер                            
+                            </p>
+                        </li>
+                        <li class="result__list-item">
+                            <p class="result-number">
+                                05
+                            </p>
+                            <h3 class="result__list-title">
+                                Подписка на&nbsp;отчеты
+                            </h3>
+                            <p class="result__list-descr">
+                                Подписка на&nbsp;аналитические отчеты по&nbsp;международным рынкам высокотехнологичных сфер                        
+                            </p>
+                        </li>
+                        <li class="result__list-item">
+                            <p class="result-number">
+                                06
+                            </p>
+                            <h3 class="result__list-title">
+                                Подписка на&nbsp;отчеты
+                            </h3>
+                            <p class="result__list-descr">
+                                Подписка на&nbsp;аналитические отчеты по&nbsp;международным рынкам высокотехнологичных сфер
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="cost">
+            <div class="container cost__container">
+                <h2 class="section-title cost__title">
+                    Стоимость
+                </h2>
+                <ul class="list-resert cost__list">
+                    <li class="cost__list-item">
+                        <div class="cost__card-top cost-card1">
+                            <p class="cost__card-title">
+                                Анализ международных рынков
+                            </p>
+                        </div>
+                        <div class="cost__list-structure">
+                            <p class="cost-structure-title">
+                                Что входит в&nbsp;отчет?
+                            </p>
+                            <ol class="cost-struct-list">
+                                <li class="cost-struct-item">Анализ конкурентов</li>
+                                <li class="cost-struct-item">Анализ инвесторов</li>
+                                <li class="cost-struct-item">Размеры рынка (TAM,SAM,SOM)</li>
+                                <li class="cost-struct-item">Анализ СМИ</li>
+                                <li class="cost-struct-item">Анализ запрос в сети интернет</li>
+                            </ol>
+                        </div>
+                        <div class="cost-readiness">
+                            <span class="readiness-title">
+                                Готовность
+                            </span>
+                            <span class="readiness-date">
+                                7 раб. дней
+                            </span>
+                        </div>
+                        <div class="cost-lang">
+                            <span class="lang-title">
+                                Язык
+                            </span>
+                            <span class="lang-lang">
+                                рус.&nbsp;/ англ.
+                            </span>
+                        </div>
+                        <div class="cost-cost">
+                            <span class="cost-cost-title">
+                                Стоимость
+                            </span>
+                            <span class="cost-price">
+                                $1 000 
+                            </span>
+                        </div>
+                        <div class="cost-item-down">
+                            <button class="btn-resert btn-blue cost-btn">
+                                Оставить заявку
+                            </button>
+                        </div>
+                    </li>
+                    <li class="cost__list-item">
+                        <div class="cost__card-top cost-card2">
+                            <p class="cost__card-title">
+                                Упаковка стартапа под локальные рынки
+                            </p>
+                        </div>
+                        <div class="cost__list-structure">
+                            <p class="cost-structure-title">
+                                Что входит в&nbsp;услугу?
+                            </p>
+                            <ol class="cost-struct-list">
+                                <li class="cost-struct-item">Анализ локальных рынков</li>
+                                <li class="cost-struct-item">Бизнес план </li>
+                                <li class="cost-struct-item">Питч презентация</li>
+                                <li class="cost-struct-item">Финансовый план </li>
+                                <li class="cost-struct-item">Расчет юнит экономики</li>
+                                <li class="cost-struct-item">Проведение каст дева </li>
+                            </ol>
+                        </div>
+                        <div class="cost-readiness">
+                            <span class="readiness-title">
+                                Готовность
+                            </span>
+                            <span class="readiness-date">
+                                7 раб. дней
+                            </span>
+                        </div>
+                        <div class="cost-lang">
+                            <span class="lang-title">
+                                Язык
+                            </span>
+                            <span class="lang-lang">
+                                рус.&nbsp;/ англ.
+                            </span>
+                        </div>
+                        <div class="cost-cost">
+                            <span class="cost-cost-title">
+                                Стоимость
+                            </span>
+                            <span class="cost-price">
+                                $1 000 
+                            </span>
+                        </div>
+                        <div class="cost-item-down">
+                            <button class="btn-resert btn-blue cost-btn">
+                                Оставить заявку
+                            </button>
+                        </div>
+                    </li>
+                    <li class="cost__list-item">
+                        <div class="cost__card-top cost-card3">
+                            <p class="cost__card-title">
+                                Акселератор вашего бизнеса
+                            </p>
+                        </div>
+                        <div class="cost__list-structure">
+                            <p class="cost-structure-title">
+                                Что входит в&nbsp;акселератор?
+                            </p>
+                            <ol class="cost-struct-list">
+                                <li class="cost-struct-item">Онлайн доступ к&nbsp;курсам</li>
+                                <li class="cost-struct-item">Документы для бизнеса</li>
+                                <li class="cost-struct-item">Питч презентация</li>
+                                <li class="cost-struct-item">Демо день</li>
+                                <li class="cost-struct-item">Провдижение по&nbsp;результатам</li>
+                            </ol>
+                        </div>
+                        <div class="cost-readiness">
+                            <span class="readiness-title">
+                                Готовность
+                            </span>
+                            <span class="readiness-date">
+                                7 раб. дней
+                            </span>
+                        </div>
+                        <div class="cost-lang">
+                            <span class="lang-title">
+                                Язык
+                            </span>
+                            <span class="lang-lang">
+                                рус.&nbsp;/ англ.
+                            </span>
+                        </div>
+                        <div class="cost-cost">
+                            <span class="cost-cost-title">
+                                Стоимость
+                            </span>
+                            <span class="cost-price">
+                                $1 000 
+                            </span>
+                        </div>
+                        <div class="cost-item-down">
+                            <button class="btn-resert btn-blue cost-btn">
+                                Оставить заявку
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="who">
+            <div class="container who__container">
+                <h2 class="section-title who__title">
+                    Кто&nbsp;мы?
+                </h2>
+                <div class="who__statistic">
+                    <p class="statist-descr">
+                        <span class="st-descr-start">INNOMA.VC</span>
+                        Международное аналитическое агентство по&nbsp;запуску&nbsp;IT бизнеса на&nbsp;локальных рынках регионов Азии, Ближнего Востока, Латинской Америки, Африки.
+                    </p>
+                    <p class="statist-descr">
+                        Наша команда состоит из&nbsp;профессионалов своего дела и&nbsp;основной нашей целью является помощь&nbsp;IT компаниям получить необходимые знания и&nbsp;пакеты документов, чтобы успешно запустить свой продукт на&nbsp;международных рынках.
+                    </p>
+                </div>
+                <div class="who__represent">
+                    <p class="appeal">
+                        Всем привет! <br> Меня зовут Роман. Последние 6&nbsp;лет я&nbsp;являюсь частью инновационной экосистемы СНГ, прошел путь от&nbsp;проектного менеджера до&nbsp;руководителя продукта по&nbsp;автоматизированному скаутингу и&nbsp;скорингу стартапов. За&nbsp;6&nbsp;лет работы я&nbsp;увидел множество ошибок и&nbsp;отсутствие ориентации акселерационных программ под запросы стартапов. Все акселераторы выполнялись ради акселераторв и&nbsp;выполнения КПЭ.
+                    </p>
+                    <p class="represent-name">
+                        Роман Гайн
+                    </p>
+                    <p class="represent-post">
+                        Основатель INNOMA.VC
+                    </p>
+                </div>
+                <div class="who__swiper">
+                    <div class="swiper">
+                        <!-- враппер -->
+                        <div class="swiper-wrapper">
+                        <!-- слайды -->
+                            <div class="swiper-slide who-slide1">
+                            </div>
+                            <div class="swiper-slide who-slide2">
+                            </div>
+                            <div class="swiper-slide who-slide3">
+                            </div>
+                            <div class="swiper-slide who-slide4">
+                            </div>
+                            <div class="swiper-slide who-slide5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="experts">
+            <div class="container experts__container">
+                <h2 class="section-title experts__title">
+                    Эксперты и&nbsp;трекеры программы
+                </h2>
+                <div class="expert__swiper">
+                    <!-- навигация-->        
+                    <div class="exp-swiper-button-prev">
+                    </div>
+                    <div class="exp-swiper-button-next">
+                    </div>
+                    <div class="swiper">
+                        <!-- враппер -->
+                        <div class="swiper-wrapper">
+                        <!-- слайды -->
+                            <div class="swiper-slide exp-slide1">
+                                <p class="exp-name">
+                                    Юрий Ким
+                                </p>
+                                <p class="exp-work">
+                                    Проведение исследования целевой аудитории позволит сформировать Product market fit
+                                </p>
+                            </div>
+                            <div class="swiper-slide exp-slide2">
+                                <p class="exp-name">
+                                    Эшли Абрамс
+                                </p>
+                                <p class="exp-work">
+                                    Проведение исследования целевой аудитории позволит сформировать Product market fit
+                                </p>
+                            </div>
+                            <div class="swiper-slide exp-slide3">
+                                <p class="exp-name">
+                                    Фатими Юсуф
+                                </p>
+                                <p class="exp-work">
+                                    Проведение исследования целевой аудитории позволит сформировать Product market fit
+                                </p>
+                            </div>
+                            <div class="swiper-slide exp-slide4">
+                                <p class="exp-name">
+                                    Майкл Донован
+                                </p>
+                                <p class="exp-work">
+                                    Проведение исследования целевой аудитории позволит сформировать Product market fit
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="container partners-top__container">
+                <h2 class="section-title partners__title">
+                    Наши партнеры
+                </h2>
+                <ul class="list-resert partner__icons">
+                    <li class="partner__icons-item partner1"></li>
+                    <li class="partner__icons-item partner2"></li>
+                    <li class="partner__icons-item partner3"></li>
+                    <li class="partner__icons-item partner4"></li>
+                    <li class="partner__icons-item partner5"></li>
+                    <li class="partner__icons-item partner6"></li>
+                    <li class="partner__icons-item partner7"></li>
+                    <li class="partner__icons-item partner8"></li>
+                </ul>
+            </div>
+            <div class="partners-down__container">
+                <div class="container">
+                    <p class="partners-slog">
+                        Мы&nbsp;создаем международное сообщество экспертов и&nbsp;партнеров
+                    </p>
+                    <p class="partners-descr">
+                        Если вы&nbsp;или ваш бизнес может быть полезен&nbsp;IT командам при выходе на&nbsp;международные рынки, приглашем вас стать нашим партнером
+                    </p>
+                    <button class="btn-resert btn-blue partners-btn">
+                        Стать партнером
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="events">
+            <div class="container events__container">
+                <h2 class="section-title events-title">
+                    Мероприятия и&nbsp;события
+                </h2>
+                <ul class="list-resert events__list">
+                    <li class="events__list-item event1">
+                        <h3 class="event-name">
+                            Новый отчет по&nbsp;MENA
+                        </h3>
+                        <p class="event-descr">
+                            Аналитический отчет по&nbsp;рынкам Ближнего Востока (инвесторы, объем раундов, ТОП сферы)
+                        </p>
+                        <p class="event-date">
+                            22.11.2022
+                        </p>
+                    </li>
+                    <li class="events__list-item event2">
+                        <h3 class="event-name">
+                            Вебинар по&nbsp;особенностям рынков Ближнего&nbsp;Востока
+                        </h3>
+                        <p class="event-descr">
+                            Поговорим с&nbsp;экспертами рынков в&nbsp;формате дискуссии
+                        </p>
+                        <p class="event-date">
+                            22.11.2022
+                        </p>
+                    </li>
+                    <li class="events__list-item event3">
+                        <h3 class="event-name">
+                            Вебинар по&nbsp;особенностям рынков Ближнего Востока
+                        </h3>
+                        <p class="event-descr">
+                            Поговорим с&nbsp;экспертами рынков в&nbsp;формате дискуссии
+                        </p>
+                        <p class="event-date">
+                            22.11.2022
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="container questions__container">
+                <div class="questions__descr">
+                    <div class="quest-descr-top">
+                        <h2 class="section-title questions-title">
+                            Остались вопросы?
+                        </h2>
+                        <p class="quest-descr-descr">
+                            Оставьте заявку и&nbsp;наша команда свяжется с&nbsp;вами
+                        </p>
+                    </div>
+                    <div class="quest-descr-bottom">
+                        <p class="social-title">
+                            Или напишите нам:
+                        </p>
+                        <div class="social">
+                            <button class="btn-resert social-item telegram">
+                                Telegram
+                            </button>
+                            <button class="btn-resert social-item watsapp">
+                                Whatsapp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions__form">
+                    <form action="#" method="get" class="questions__form-field">
+                        <input type="text" class="quest-input name" name="Имя" placeholder="Имя">
+                        <input type="email" class="quest-input mail" name="email" placeholder="Почта">
+                        <input type="tel" name="tel" class="quest-input tel-select">
+                        <button class="btn-resert btn-green quest-form-btn">
+                            Оставить заявку
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container footer__container">
+                <div class="logo-copy">
+                    <a href="#" class="footer-logo">
+                        <picture>
+                        <img src="img/innomavcLogo.png" class="header-logo-img" alt="logo">
+                        </picture>
+                    </a>
+                    <p class="copyright">
+                        Все права защищены
+                    </p>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list list-resert">
+                        <li class="footer__nav-item">
+                            Кто мы?
+                        </li>
+                        <li class="footer__nav-item">
+                            Услуги
+                        </li>
+                        <li class="footer__nav-item">
+                            Акселератор
+                        </li>
+                        <li class="footer__nav-item">
+                            Новости
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__contacts">
+                    <p class="footer-adress">
+                        Dubai, Single Business Tower 1503, Business Bay
+                    </p>
+                    <p class="footer-email">
+                        Sales@innoma.vc
+                    </p>
+                </div>
+            </div>
+        </section>
+        <script src="accordion.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  
+        <script>
+            //modal
 
+            function openModal(id_modal)  {
+                /*записываем в переменную наше модальное окно*/
+                let modalWindow = document.querySelector(id_modal);
+
+                if(modalWindow.classList.contains("active")) {
+                    modalWindow.classList.remove('active');
+                }
+                else {
+                    modalWindow.classList.add('active');
+                }
+
+                let butExit = modalWindow.querySelector('.butExit');
+                
+                /*если нажали на иконку крестика, то закрываем окно*/
+                butExit.addEventListener('click', function() {
+                    modalWindow.classList.remove('active');
+                })
+
+                let backBlack = modalWindow.querySelector('.backBlack');
+
+                /*если нажали на поле вне окна, то закрываем окно*/
+                backBlack.addEventListener('click', function() {
+                    modalWindow.classList.remove('active');
+                })
+
+                }
+
+            let burger = document.querySelector('.burger');
+            let menu = document.querySelector('.header__nav');
+            let menuLinks = menu.querySelectorAll('.header__list-item');
+
+            burger.addEventListener('click', function() {
+            burger.classList.toggle('burger--active');
+
+            menu.classList.toggle('header__nav--active');
+
+            document.body.classList.toggle('stop-scroll');
+            })
+
+            menuLinks.forEach(function(el) {
+            el.addEventListener('click', function() {
+
+                burger.classList.remove('burger--active');
+
+                menu.classList.remove('header__nav--active');
+
+                document.body.classList.remove('stop-scroll');
+            })})
+
+            document.querySelectorAll('.tabs-nav__btn').forEach(function(tabsBtn){
+            tabsBtn.addEventListener('click', function(e){
+            const path = e.currentTarget.dataset.path;
+            document.querySelectorAll('.tabs-nav__btn').forEach(function(btn){
+            btn.classList.remove('tabs-nav__btn--active')});
+            e.currentTarget.classList.add('tabs-nav__btn--active');
+            document.querySelectorAll('.tabs-item').forEach(function(tabsBtn){
+            tabsBtn.classList.remove('tabs-item--active')});
+            document.querySelector(`[data-target="${path}"]`).classList.add('tabs-item--active');
+            });
+            });
+
+            new Accordion('.accordion');
+
+            const who__container = document.querySelector(".who")
+            const who__swiper = new Swiper('.who .swiper', {
+            // Optional parameters
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 30,
+                
+            // Responsive breakpoints
+            breakpoints: {
+                560: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 8,
+                },
+
+                1024: {
+                slidesPerView: 5,
+                slidesPerGroup: 5,
+                spaceBetween: 8,
+                },
+                
+            }})
+
+            const experts__container = document.querySelector(".experts")
+            const expert__swiper = new Swiper('.experts .swiper', {
+            // Optional parameters
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 30,
+                
+            // Navigation arrows
+            navigation: {
+                nextEl: '.exp-swiper-button-next',
+                prevEl: '.exp-swiper-button-prev',
+            },
+
+            // Responsive breakpoints
+            breakpoints: {
+                560: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 68,
+                },
+
+                1024: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 45,
+                },
+                
+                1919: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+                spaceBetween: 37,
+                },
+
+            }})
+
+        </script>
+    </div>
 </body>
 </html>
