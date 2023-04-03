@@ -910,6 +910,7 @@
   }
 
   .accel__video-overlay {
+    top: 15%;
     left: 17%;
   }
 
@@ -968,7 +969,7 @@
   }
 
   .result__list-item:not(:nth-child(2n)) {
-    margin-right: 20px;
+    margin-right: 15px;
   }
 
 
@@ -1142,7 +1143,11 @@
   }
 
   .result__list-item {
-    min-height: 315px;
+    min-height: 360px;
+  }
+
+  .result__list-item:not(:nth-child(2n)) {
+    margin-right: 10px;
   }
 
   .markets__block-item:last-child {
