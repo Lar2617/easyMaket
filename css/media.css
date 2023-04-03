@@ -150,7 +150,7 @@
   }
 
   .partners-btn {
-    margin: 0 30%;
+    margin: 0 auto;
     padding: 5px 40px;
   }
 
@@ -270,7 +270,7 @@
   }
 
   .partners-btn {
-    margin: 0 34%;
+    margin: 0 auto;
   }
 
   .logo-copy {
@@ -416,7 +416,7 @@
   }
 
   .consultation__container {
-    padding: 118px 60px;
+    padding: 118px 0;
   }
 
   .consultation__btn {
@@ -651,7 +651,7 @@
   }
 
   .partners__top {
-    padding: 100px 140px;
+    padding: 100px 20px;
     margin-bottom: 0;
   }
 
@@ -1162,7 +1162,7 @@
   }
 
   .partners-btn {
-    margin: 0 10%;
+    margin: 0 auto;
     margin-bottom: 70px;
   }
 
@@ -1679,7 +1679,7 @@
 
   .partners-btn {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 122px;
   }
 
