@@ -1086,7 +1086,8 @@
   }
 
   .quest-form-btn {
-    padding: 0 10%;
+    line-height: 24px;
+    padding: 10px 10%;
   }
 
 }
@@ -1169,7 +1170,7 @@
   }
 
   .result__list-item {
-    min-height: 360px;
+    min-height: 380px;
   }
 
   .result__list-item:not(:nth-child(2n)) {
