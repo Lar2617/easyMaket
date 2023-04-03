@@ -325,7 +325,7 @@ p, h1, h2, h3, span {
   
   .modalWrapper.active {
     position: absolute;
-    top: 10%;
+    top: 150px;
     right: 18%;
     visibility: visible;
   }
@@ -435,7 +435,7 @@ p, h1, h2, h3, span {
 .services__researches {
     margin-bottom: 180px;
     padding-right: 45%;
-    background: url(../img/researches-bg.jpg) right center/35% 65% no-repeat;
+    background: url(../img/researches-bg.jpg) right center/45% 65% no-repeat;
 }
 
 .services__accelerator {
@@ -738,8 +738,8 @@ p, h1, h2, h3, span {
 }
 
 .markets__block-item svg {
-    width: 30%;
-    height: 30%;
+    width: 37%;
+    height: 33%;
 }
 
 .markets__block-item:nth-child(2n) {
@@ -1559,7 +1559,7 @@ p, h1, h2, h3, span {
             align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+            justify-content: center;
     width: 100%;
     min-height: 220px;
   }
@@ -1622,6 +1622,7 @@ p, h1, h2, h3, span {
     width: 100%;
     min-height: 563px;
     padding: 0;
+    text-align: center;
     background: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.65)),to(rgba(0, 0, 0, 0.65))), url(../img/pertners-down-bg.png) center/cover no-repeat;
     background: -o-linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url(../img/pertners-down-bg.png) center/cover no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url(../img/pertners-down-bg.png) center/cover no-repeat;
