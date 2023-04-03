@@ -364,7 +364,7 @@
   }
 
   .nav__list-item {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .header__btn {
@@ -1091,7 +1091,7 @@
   }
 
   .header__nav .nav__list-item {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 80px;
   }
 
