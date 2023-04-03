@@ -1706,6 +1706,7 @@ p, h1, h2, h3, span {
   }
 
   .event-descr {
+    margin-bottom: 20px;
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;

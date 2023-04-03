@@ -670,7 +670,7 @@
   }
 
   .partners-btn {
-    padding: 5px 80px;
+    padding: 5px 23%;
     margin: 0 25%;
   }
 
@@ -810,7 +810,7 @@
   }
 
   .proposal-btn {
-    padding: 0 56px;
+    padding: 0 20%;
     margin-bottom: 68px;
   }
 
@@ -962,9 +962,10 @@
 
   .result__list-item {
     width: 43%;
+    margin-right: 0;
   }
 
-  .result__list-item:not(:nth-child(3n)) {
+  .result__list-item:nth-child(3n) {
     margin-right: 0;
   }
 
@@ -1044,6 +1045,7 @@
   }
 
   .partners-btn {
+    padding: 5px 21%;
     margin: 0 17%;
     margin-bottom: 50px;
   }
@@ -1081,6 +1083,10 @@
 
   .event-date {
     left: 106px;
+  }
+
+  .quest-form-btn {
+    padding: 0 10%;
   }
 
 }
@@ -1124,11 +1130,20 @@
   }
 
   .consultation__btn {
+    padding: 0 12%;
     font-size: 16px;   
   }
 
   .tabs-nav__btn {
-    padding: 19px 20px;
+    padding: 15px 12px;
+  }
+
+  .score-descr {
+    font-size: 14px;
+  }
+
+  .score-link {
+    font-size: 14px;
   }
 
   .accel__video-overlay {
@@ -1139,8 +1154,18 @@
     height: 295px;
   }
 
+  .accel__video-link {
+    font-size: 14px;
+  }
+
   .radar__proposal {
     padding: 0 60px;
+  }
+
+  .radar-btn {
+    padding: 10px 5%;
+    font-size: 14px;
+    line-height: 24px;
   }
 
   .result__list-item {
