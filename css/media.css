@@ -795,11 +795,13 @@
   .main-title {
     font-size: 24px;
     line-height: 40px;
+    word-wrap: break-word;
   }
 
   .header__title {
     font-size: 24px;
     line-height: 40px;
+    word-wrap: break-word;
   }
 
   .header__proposal {
@@ -1112,6 +1114,7 @@
 
   .consultation__title {
     font-size: 30px;
+    word-wrap: break-word;
   }
 
   .consultation__descr {
