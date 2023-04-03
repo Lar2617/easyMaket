@@ -100,6 +100,10 @@
     padding: 70px 0;
   }
 
+  .ac .ac-trigger {
+    padding-right: 60px;
+  }
+
   .footer__container {
     padding-top: 24px;
   }
@@ -114,7 +118,7 @@
   }
 
   .forwhom__list-item {
-    min-height: 335px;
+    min-height: 370px;
   }
 
   .markets__block-item:last-child {
