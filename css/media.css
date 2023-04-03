@@ -1138,6 +1138,7 @@
   .accel__video {
     height: 295px;
   }
+
   .radar__proposal {
     padding: 0 60px;
   }
@@ -1391,7 +1392,7 @@
   }
 
   .services__researches {
-    background-size: 90% 25%;
+    background-size: 90% 20%;
   }
 
   .services__researches-title {
@@ -1405,7 +1406,7 @@
   }
 
   .services__accelerator {
-    background-size: 90% 30%;
+    background-size: 90% 25%;
   }
 
   .forwhom-number {
