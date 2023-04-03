@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/accordion.min.css"/>
+    <link rel="stylesheet" href="css/accordion.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/media.css">
@@ -16,7 +16,7 @@
     <!-- Начало: Данный блок удалять нельзя -->
     <div class="maketforfigma">
         <a href="https://t.me/s/FigmaToHTML" target="_blank">
-            <img src="img/logo.png">
+            <img src="img/logo.png" alt="logo">
         </a>
         <div>
             <p>
@@ -63,7 +63,7 @@
                         <div class="modalContent modal-form">
                             <button class="btn-resert butExit">
                             </button>
-                            <form action="#" method="get" class="reg__form">
+                            <form action="#" method="get" class="reg-form">
                                 <p class="reg-title">
                                     Войти
                                 </p>
@@ -307,7 +307,7 @@
                 </ul>
                 <div class="accel__video-contaitner">
                     <video autoplay loop muted class="accel__video">
-                        <source src="#" type="">
+                        <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                     </video>                    
                     <div class="accel__video-overlay">
                         <a href="#" class="accel__video-link">
@@ -504,7 +504,7 @@
                 </button>
             </div>
         </section>
-        <sectoin class="radar">
+        <section class="radar">
             <div class="container radar__container">
                 <div class="radar__proposal">
                     <h2 class="section-title radar__title">
@@ -526,7 +526,7 @@
                     <li class="radar__card-item radar-card6"></li>
                 </ul>
             </div>
-        </sectoin>
+        </section>
         <section class="result">
             <div class="container result__container">
                 <h2 class="section-title result-title">
@@ -808,7 +808,7 @@
                 <h2 class="section-title experts__title">
                     Эксперты и&nbsp;трекеры программы
                 </h2>
-                <div class="expert__swiper">
+                <div class="experts__swiper">
                     <!-- навигация-->        
                     <div class="exp-swiper-button-prev">
                     </div>
@@ -856,22 +856,22 @@
             </div>
         </section>
         <section class="partners">
-            <div class="container partners-top__container">
+            <div class="container partners__top">
                 <h2 class="section-title partners__title">
                     Наши партнеры
                 </h2>
-                <ul class="list-resert partner__icons">
-                    <li class="partner__icons-item partner1"></li>
-                    <li class="partner__icons-item partner2"></li>
-                    <li class="partner__icons-item partner3"></li>
-                    <li class="partner__icons-item partner4"></li>
-                    <li class="partner__icons-item partner5"></li>
-                    <li class="partner__icons-item partner6"></li>
-                    <li class="partner__icons-item partner7"></li>
-                    <li class="partner__icons-item partner8"></li>
+                <ul class="list-resert partners__icons">
+                    <li class="partners__icons-item partner1"></li>
+                    <li class="partners__icons-item partner2"></li>
+                    <li class="partners__icons-item partner3"></li>
+                    <li class="partners__icons-item partner4"></li>
+                    <li class="partners__icons-item partner5"></li>
+                    <li class="partners__icons-item partner6"></li>
+                    <li class="partners__icons-item partner7"></li>
+                    <li class="partners__icons-item partner8"></li>
                 </ul>
             </div>
-            <div class="partners-down__container">
+            <div class="partners__down">
                 <div class="container">
                     <p class="partners-slog">
                         Мы&nbsp;создаем международное сообщество экспертов и&nbsp;партнеров
@@ -972,9 +972,9 @@
                         <img src="img/innomavcLogo.png" class="header-logo-img" alt="logo">
                         </picture>
                     </a>
-                    <p class="copyright">
+                    <h2 class="copyright">
                         Все права защищены
-                    </p>
+                    </h2>
                 </div>
                 <nav class="footer__nav">
                     <ul class="footer__nav-list list-resert">
@@ -1002,133 +1002,9 @@
                 </div>
             </div>
         </section>
-        <script src="accordion.min.js"></script>
+        <script src="js/accordion.min.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  
-        <script>
-            //modal
-
-            function openModal(id_modal)  {
-                /*записываем в переменную наше модальное окно*/
-                let modalWindow = document.querySelector(id_modal);
-
-                if(modalWindow.classList.contains("active")) {
-                    modalWindow.classList.remove('active');
-                }
-                else {
-                    modalWindow.classList.add('active');
-                }
-
-                let butExit = modalWindow.querySelector('.butExit');
-                
-                /*если нажали на иконку крестика, то закрываем окно*/
-                butExit.addEventListener('click', function() {
-                    modalWindow.classList.remove('active');
-                })
-
-                let backBlack = modalWindow.querySelector('.backBlack');
-
-                /*если нажали на поле вне окна, то закрываем окно*/
-                backBlack.addEventListener('click', function() {
-                    modalWindow.classList.remove('active');
-                })
-
-                }
-
-            let burger = document.querySelector('.burger');
-            let menu = document.querySelector('.header__nav');
-            let menuLinks = menu.querySelectorAll('.header__list-item');
-
-            burger.addEventListener('click', function() {
-            burger.classList.toggle('burger--active');
-
-            menu.classList.toggle('header__nav--active');
-
-            document.body.classList.toggle('stop-scroll');
-            })
-
-            menuLinks.forEach(function(el) {
-            el.addEventListener('click', function() {
-
-                burger.classList.remove('burger--active');
-
-                menu.classList.remove('header__nav--active');
-
-                document.body.classList.remove('stop-scroll');
-            })})
-
-            document.querySelectorAll('.tabs-nav__btn').forEach(function(tabsBtn){
-            tabsBtn.addEventListener('click', function(e){
-            const path = e.currentTarget.dataset.path;
-            document.querySelectorAll('.tabs-nav__btn').forEach(function(btn){
-            btn.classList.remove('tabs-nav__btn--active')});
-            e.currentTarget.classList.add('tabs-nav__btn--active');
-            document.querySelectorAll('.tabs-item').forEach(function(tabsBtn){
-            tabsBtn.classList.remove('tabs-item--active')});
-            document.querySelector(`[data-target="${path}"]`).classList.add('tabs-item--active');
-            });
-            });
-
-            new Accordion('.accordion');
-
-            const who__container = document.querySelector(".who")
-            const who__swiper = new Swiper('.who .swiper', {
-            // Optional parameters
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 30,
-                
-            // Responsive breakpoints
-            breakpoints: {
-                560: {
-                slidesPerView: 3,
-                slidesPerGroup: 3,
-                spaceBetween: 8,
-                },
-
-                1024: {
-                slidesPerView: 5,
-                slidesPerGroup: 5,
-                spaceBetween: 8,
-                },
-                
-            }})
-
-            const experts__container = document.querySelector(".experts")
-            const expert__swiper = new Swiper('.experts .swiper', {
-            // Optional parameters
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 30,
-                
-            // Navigation arrows
-            navigation: {
-                nextEl: '.exp-swiper-button-next',
-                prevEl: '.exp-swiper-button-prev',
-            },
-
-            // Responsive breakpoints
-            breakpoints: {
-                560: {
-                slidesPerView: 2,
-                slidesPerGroup: 2,
-                spaceBetween: 68,
-                },
-
-                1024: {
-                slidesPerView: 3,
-                slidesPerGroup: 3,
-                spaceBetween: 45,
-                },
-                
-                1919: {
-                slidesPerView: 4,
-                slidesPerGroup: 4,
-                spaceBetween: 37,
-                },
-
-            }})
-
-        </script>
+        <script src="js/script.js"></script>
     </div>
 </body>
 </html>
